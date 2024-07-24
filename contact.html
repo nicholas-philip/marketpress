@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Auto Parts-WordPress Theme</title>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topper">
+    <div class="toggle-icon"></div>
+    <div class="topper-content" id="topperContent">
+      <div><i class="fa fa-truck"></i> Free Delivery</div>
+      <hr>
+      <div><i class="fa fa-globe"></i> Returns Policy</div>
+      <hr>
+      <div class="socails">
+        <div class="follow-us">Follow Us</div>
+        <div class="icons">
+          <a href="#"><i class="fa fa-facebook text-black"></i></a>
+          <a href="#"><i class="fa fa-twitter text-black"></i></a>
+          <a href="#"><i class="fa fa-instagram text-black"></i></a>
+          <a href="#"><i class="fa fa-pinterest-p text-black"></i></a>
+        </div>
+      </div>
+      <a href="#" class="link text-black">Login</a>
+    </div>
+  </div>
+
+  <div class="marketpress">
+    <h1 class="text-white press font-bold">MarketPress<span class="dot">.</span></h1>
+    <div class="search-bar">
+      <i class="fa fa-search text-white"></i>
+      <div id="select">
+        <p>All Categories</p>
+        <i class="fa fa-chevron-down mb-3" aria-hidden="true"></i>
+        <ul id="list">
+          <li class="options">All Categories</li>
+          <li class="options">Women Clothing</li>
+          <li class="options">Featured product</li>
+          <li class="options">All Categories</li>
+          <li class="options">All Categories</li>
+        </ul>
+      </div>
+      <input type="text" placeholder="Find your product">
+    </div>
+    <div class="flex flex-row text-white gap-5">
+      <i class="fa fa-heart-o"></i>
+      <i class="fa fa-shopping-bag"></i>
+    </div>
+  </div>
+
+  <section class="nav-bar shadow-xl">
+    <div id="selt">
+      <i class="fa fa-bars"></i>
+      <p class="font-bold text-l mt-3">All Categories</p>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      <ul id="lit">
+        <li class="options">All Categories</li>
+        <li class="options">Women Clothing</li>
+        <li class="options">Featured Product</li>
+        <li class="options">All Categories</li>
+        <li class="options">All Categories</li>
+      </ul>
+    </div>
+
+    <div class="manu-bar text-l font-bold mt-3">
+      <ul class="home">
+        <li class="active">
+          <a href="#">Home</a>
+          <div class="sub-menu-2">
+            <ul>
+              <li>
+                <div class="flex-container">
+                  <div class="flex-item"><img src="home-one.jpg" alt="Home 01"></div>
+                  <div class="flex-item"><img src="home-three1.jpg" alt="Home 02"></div>
+                  <div class="flex-item"><img src="home-two1.jpg" alt="Home 03"></div>
+                  <div class="flex-item"><img src="home-eight1.jpg" alt="Home 04"></div>
+                  <div class="flex-item"><img src="home-eight1.jpg" alt="Home 05"></div>
+                  <div class="flex-item"><img src="home-nine1.jpg" alt="Home 06"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="about-us.html">AboutUs </a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact </a>
+        </li>
+
+        <li>
+          <a href="#">Pages</a>
+          <div class="sub-menu-1">
+            <ul class="lista">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Term and conditions</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Product </a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Shops </a>
+          <div class="sub-menu-1">
+            <ul class="lista">
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Wishlist</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Blog </a>
+          <div class="sub-menu-1">
+            <ul class="lista">
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blog Single</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="bar">
+        <label for="chk1">
+          <i class="fa fa-bars my-bars"></i>
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <button class="get">
+        <p class="mt-4">BLACK FRIDAY <br><span>Get 45% Off</span></p>
+      </button>
+    </div>
+  </section>
+
+  <section class="about-header">
+    <div id="home">
+     <a href="index.html"> <p>Home</p></a>
+      <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+     <a href=""> <p>Contact</p></a>
+    </div>
+    </section>
+
+
+
+
+
+
+    <section class="contact-section">
+      <div class="container">
+          <h1>Get in touch</h1>
+          <p>Fundpress site thoughtfully designed for real humans which means the best user experience for your entire community of donors, fundraisers, customers, and staff.</p>
+          <form>
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <label for="email" class="email-label">Email</label>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="name" name="name" class="first">
+                  <input type="email" id="email" name="email" class="second">
+              </div>
+              <div class="form-group">
+                  <label for="subject">Subject</label>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="subject" name="subject">
+              </div>
+              <div class="form-group">
+                  <label for="description">Description</label>
+              </div>
+              <div class="form-group">
+                  <textarea id="description" name="description"></textarea>
+              </div>
+              <button type="submit" class="query">Get A Query</button>
+          </form>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // The location of the map center
+            const center = [51.505, -0.09];
+            // Initialize the map
+            const map = L.map('map').setView(center, 13);
+            
+            // Set up the OSM layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Add a marker
+            L.marker(center).addTo(map)
+                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                .openPopup();
+        });
+    </script>
+
+
+
+
+
+
+
+
+ 
+
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-column">
+          <h2 class="footer-logo">MarketPress<span class="dot">.</span></h2>
+          <p class="footer-question">Got Question? Call us 24/7</p>
+          <p class="footer-phone"><strong>[80] 1017 197</strong></p>
+          <p class="footer-address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          <button class="footer-button text-bold"><i class="fa fa-map-marker" aria-hidden="true"></i>View On Map</button>
+      </div>
+      <div class="footer-column text-semibold">
+          <p class="footer-subtitle">We Using</p>
+          <p class="footer-title">Safe Payments</p>
+          <p class="footer-secured">Secured by:</p>
+      </div>
+      <div class="footer-column">
+          <h3 class="footer-title">Our Stores</h3>
+          <ul class="footer-list text-semibold">
+              <li>New York</li>
+              <li>London SF</li>
+              <li>Cockfosters BP</li>
+              <li>Los Angeles</li>
+              <li>Chicago</li>
+              <li>Las Vegas</li>
+              <li>Albarto</li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-list">
+              <li>Support Center</li>
+              <li>Term & Conditions</li>
+              <li>Shipping</li>
+              <li>Privacy Policy</li>
+              <li>Help</li>
+              <li>Products Return</li>
+              <li>FAQs</li>
+          </ul>
+      </div>
+  </div>
+  <div class="back-to-top">
+      <span>Back to Top <i class="fa fa-arrow-right" aria-hidden="true"></i></i></i></span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+
+
+
+
+<script>
+ let select = document.getElementById("select");
+ let list = document.getElementById("list");
+
+
+select.onclick = function(){
+  list.classList.toggle("open");
+}
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleIcon = document.querySelector('.toggle-icon');
+    const topperContent = document.getElementById('topperContent');
+  
+    toggleIcon.addEventListener('click', function() {
+      topperContent.classList.toggle('show');
+    });
+  });
+  </script>
+
+
+<script>
+  let selt = document.getElementById("selt");
+  let lit = document.getElementById("lit");
+
+  selt.onclick = function() {
+    lit.classList.toggle("open");
+  }
+</script>
+
+
+
+  
+</html>
