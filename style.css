@@ -62,11 +62,6 @@ hr {
     display: none;
   }
 
-  .topper-content {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    width: 100%;
-  }
 
   .topper-content.show {
     display: flex; /* Show content when toggled */
