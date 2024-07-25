@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Base styles */
+/* topper styles */
 .topper {
   background-color: #F5F5F5;
   height: 40px;
@@ -53,52 +53,9 @@ hr {
   margin-left: 500px; /* Align login link */
 }
 
-/* Media query for screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 768px) {
-  .topper {
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the start for mobile */
-    padding: 10px; /* Adjust padding for mobile */
-    display: none;
-  }
 
 
-  .topper-content.show {
-    display: flex; /* Show content when toggled */
-  }
 
-  .link {
-    margin-left: 0; /* Reset margin for mobile */
-    margin-top: 10px; /* Adjust margin for mobile */
-  }
-
-  .icons {
-    gap: 10px; /* Adjust gap for smaller screens */
-    margin-left: 0; /* Reset margin for mobile */
-  }
-
-  .toggle-icon {
-    display: block;
-    font-size: 24px; /* Adjust icon size */
-    cursor: pointer;
-    margin-bottom: 10px; /* Space between icon and content */
-  }
-}
-
-/* Media query for screens smaller than 480px (smaller phones like iPhone SE) */
-@media (max-width: 480px) {
-  .toggle-icon {
-    font-size: 20px; /* Smaller icon size for very small screens */
-  }
-
-  .topper-content {
-    padding: 15px;
-  }
-
-  .link {
-    margin-top: 5px; /* Adjust margin for very small screens */
-  }
-}
 
 .scrh{
   height: 57px;
@@ -199,53 +156,6 @@ color:white;
   font-size: 30px; /* Adjust the size as needed */
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 767px) {
-  .marketpress {
-    position: absolute;
-    flex-direction: row;
-    height: 80px;
-    padding: 10px 0;
-   justify-content: center;
-   display: none;
-  }
-
-/* .press{
-  font-size: 20px;
-  margin-left: -50px;
-  display: none;
-}
-  .search-bar {
-    width: 95%;
-    height: auto;
-    flex-direction: column-reverse;
-    padding: 10px;
-    display: none;
-  }
-
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    display: none;
-  }
-
-  #select {
-    width: 100%;
-    margin-top: 0;
-    padding: 15px;
-  }
-
-  .fa-search {
-    width: 80px;
-  }
-
-  .fa-heart-o, .fa-shopping-bag {
-    font-size: 25px;
-    display: none;
-  
-  } */
-}
 
 
 .home{
@@ -301,7 +211,7 @@ color:white;
   flex-direction: row;
   background-color:white;
   width: 100%;
-  /* height: 100px; */
+  height: 100px;
   justify-content: center;
   align-items: center;
   gap: 80px;
@@ -521,7 +431,7 @@ margin-right: 30px;
   height: 90vh;
   width: 100%;
   position: static;
-  background-color:#0F233C;
+  background-color:#f7f8fa;
   color: white;
 }
 
@@ -1814,6 +1724,6 @@ textarea {
 #description{
   width: 100%;
   height: 200px;
- 
+
   border: solid 1px blue;
 }
