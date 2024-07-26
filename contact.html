@@ -32,13 +32,34 @@
     </div>
   </div>
 
-  <div class="marketpress">
+  <div class="marketpress ">
     <h1 class="text-white press font-bold">MarketPress<span class="dot">.</span></h1>
+
+    <div id="sideNav" style="left: -250px;">
+      <nav>
+          <ul>
+              <li> <a href="index.html">Home </a></li>
+              <li><a href="about-us.html">AboutUs </a></li>
+              <li>  <a href="contact.html">Contact </a></li>
+              <li> <a href="#">Pages </a></li>
+              <li><a href="#">Shops</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div id="menuBtn">
+    
+     <img src="manu.png" id="menu" alt="">
+  </div>
+
+
     <div class="search-bar">
-      <i class="fa fa-search text-white"></i>
+      <div class="scrh">
+        <i class="fa fa-search "></i>
+      </div>
+      
       <div id="select">
         <p>All Categories</p>
-        <i class="fa fa-chevron-down mb-3" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down mb-3 " aria-hidden="true"></i>
         <ul id="list">
           <li class="options">All Categories</li>
           <li class="options">Women Clothing</li>
@@ -49,7 +70,7 @@
       </div>
       <input type="text" placeholder="Find your product">
     </div>
-    <div class="flex flex-row text-white gap-5">
+    <div class="flex flex-row text-white gap-5 text-3xl">
       <i class="fa fa-heart-o"></i>
       <i class="fa fa-shopping-bag"></i>
     </div>
@@ -144,9 +165,21 @@
 
   <section class="about-header">
     <div id="home">
-     <a href="index.html"> <p>Home</p></a>
+    <a href="index.html"> <p>Home</p></a>
       <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
-     <a href=""> <p>Contact</p></a>
+    <a href="about-us.html"> <p>About Us</p></a>
+    </div>
+    </section>
+
+
+
+  <section class="abot-header">
+    <div id="home1">
+    <a href="index.html"> <p>Home</p></a>
+      <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+    <a href="about-us.html"> <p>About Us</p></a>
+    <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+    <a href="contact.html"> <p>Contact</p></a>
     </div>
     </section>
 
@@ -157,15 +190,13 @@
 
     <section class="contact-section">
       <div class="container">
-          <h1>Get in touch</h1>
-          <p>Fundpress site thoughtfully designed for real humans which means the best user experience for your entire community of <br>donors, fundraisers, customers, and staff.</p>
+          <h1 class="toch">Get in touch</h1>
+          <p class="toc">Fundpress site thoughtfully designed for real humans which means the best user experience for your entire community of <br class="break">donors, fundraisers, customers, and staff.</p>
           <form>
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <label for="email" class="email-label">Email</label>
-              </div>
-              <div class="form-group">
+              <div class="form-group1">
+                <label for="name">Name</label>
                   <input type="text" id="name" name="name" class="first">
+                  <label for="name">Email</label>
                   <input type="email" id="email" name="email" class="second">
               </div>
               <div class="form-group">
@@ -276,6 +307,50 @@
 </footer>
 
 
+<footer class="footer1 ml-8 gap-8">
+<div class="footer-container1">
+  <div class="flex flex-col gap-8 ">
+    <div class="footer-column1">
+        <h2 class="footer-logo1 text-3xl">MarketPress<span class="dot1">.</span></h2>
+        <p class="footer-question1 text-xl ">Got Question? Call us 24/7</p>
+        <p class="footer-phone1 text-2xl"><strong>[80] 1017 197</strong></p>
+        <p class="footer-address1 font-bold ">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+        <button class="footer-button text-bold"><i class="fa fa-map-marker" aria-hidden="true"></i>View On Map</button>
+    </div>
+    <div class="footer-column1 text-semibold">
+        <p class="footer-subtitle1 text-2xl">We Using</p>
+        <p class="footer-title1 font-semibold text-xl">Safe Payments</p>
+        <p class="footer-secured1 font-semibold text-l">Secured by:</p>
+    </div>
+  </div>
+    <div class="flex flex-row gap-4">
+    <div class="footer-column1">
+        <h3 class="footer-title1 font-bold">Our Stores</h3>
+        <ul class="footer-list1 text-semibold">
+            <li>New York</li>
+            <li>London SF</li>
+            <li>Cockfosters BP</li>
+            <li>Los Angeles</li>
+            <li>Chicago</li>
+            <li>Las Vegas</li>
+            <li>Albarto</li>
+        </ul>
+    </div>
+    <div class="footer-column1">
+        <h3 class="footer-title1 font-bold">Quick Links</h3>
+        <ul class="footer-list1">
+            <li>Support Center</li>
+            <li>Term & Conditions</li>
+            <li>Shipping</li>
+            <li>Privacy Policy</li>
+            <li>Help</li>
+            <li>Products Return</li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</footer>
 
 
 
@@ -286,6 +361,31 @@
 
 
 
+
+<script>
+  var menuBtn = document.getElementById("menuBtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
+
+  sideNav.style.left="-250px";
+
+  menuBtn.onclick= function(){
+      if(sideNav.style.left=="-250px"){
+          sideNav.style.left="0";
+          menu.src="close1.png";
+          
+      }
+      else{
+          sideNav.style.left="-250px"
+          menu.src="manu.png";
+      }
+      }
+var scroll = new SmoothScroll('a[href*="#"]', {
+   speed: 1000,
+   speedAsDuration: true
+});
+
+</script>
 
 
 
